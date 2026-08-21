@@ -1,0 +1,85 @@
+name: Bug report
+description: Report a reproducible problem in Codefa Stories
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Codefa Stories.
+
+        Do not report security vulnerabilities here. Please use GitHub Private Vulnerability Reporting.
+
+  - type: input
+    id: plugin-version
+    attributes:
+      label: Codefa Stories version
+      placeholder: "e.g. 0.1.0"
+    validations:
+      required: true
+
+  - type: input
+    id: wordpress-version
+    attributes:
+      label: WordPress version
+      placeholder: "e.g. 7.x"
+    validations:
+      required: true
+
+  - type: input
+    id: php-version
+    attributes:
+      label: PHP version
+      placeholder: "e.g. 8.x"
+    validations:
+      required: true
+
+  - type: input
+    id: theme
+    attributes:
+      label: Active theme
+      placeholder: "e.g. Twenty Twenty-Six, Woodmart"
+
+  - type: textarea
+    id: plugins
+    attributes:
+      label: Relevant active plugins
+      description: Include Elementor, WooCommerce, caching and security plugins when relevant.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Problem description
+      description: Clearly describe what is happening.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to...
+        2. Click...
+        3. Observe...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Remove passwords, API keys, tokens, personal information and other secrets before posting.
